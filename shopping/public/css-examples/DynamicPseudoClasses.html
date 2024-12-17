@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover{
+            color: green;
+        }
+        p:hover{
+            color: red;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            transition: 5s;
+        }
+        img:active{
+            width: 300px;
+            height: 300px;
+            transition: 3s;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-size: 30px;
+            transition: 3s;
+        }
+        a:active{
+            color: red;
+        }
+        a:visited{
+            color: gray;
+        }
+    </style>
+    <script>
+        function setColor(){
+            document.querySelector("h1").style.color="blue";
+        }
+        function resetColor(){
+            document.querySelector("h1").style.color="black";
+        }
+    </script>
+</head>
+<body>
+    <h1 onmouseover="setColor()" onmouseleave="resetColor()">Welcome to HTML</h1>
+    <p>It is markup language. It is used for presentation.</p>
+    <img src="../../public/favicon.ico" alt="">
+    <a href="#">Home</a> |
+    <a href="http://www.ebay.com">Shop</a>
+</body>
+</html>

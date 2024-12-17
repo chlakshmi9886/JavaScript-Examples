@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:optional+span{
+            display: none;
+        }
+        input:required+span{
+            display: inline;
+            color: red;
+        }
+        input:optional{
+            background-color: yellow;
+        }
+        input:required{
+            background-color: red;
+        }
+        input:focus{
+            background-color: white;
+        }
+        #username:valid~div{
+            display: none;
+        }
+        #username:valid{
+            background-color: chartreuse;
+        }
+        #username:valid+span{
+            display: none;
+        }
+        #username:invalid~div{
+            display: block;
+            color: red;
+        }
+        #mobile:invalid~div{
+            color: red;
+            display: block;            
+        }
+        #mobile:valid~div{
+            display: none;
+        }
+        #mobile:valid{
+            background-color: green;
+        }
+        #age:in-range~div {
+            display: none;
+        }
+        #age:out-of-range~div {
+            display: block;
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--1) :required 
+    2) :optional 
+    3) :valid 
+    4) :invalid 
+    5) :in-range 
+    6) :out-of-range-->
+
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="username" required><span>*</span>
+            <div>User Name Required</div>
+        </dd>        
+        <dt>Mobile</dt>
+        <dd><input type="text" id="mobile" pattern="\+91\d{10}"><span>*</span>
+            <div>Mobile Number Required</div>    
+        </dd>
+        <dt>Age</dt>
+        <dd><input type="number" id="age" min="15" max="30"><span>*</span>
+            <div>Age should be between 15 and 30</div>
+        </dd>
+    </dl>
+    <button>Submit</button>
+</body>
+</html>

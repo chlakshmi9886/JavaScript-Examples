@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery HTML</title>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("p").html("<b>Welcome to jQuery</b>");
+            $("p").append(" Hello !");
+            $("p").prepend("Hi"); 
+            $("p").before("jQuery");
+            $("p").after("Write Less Do More");
+            $("#image").append(`<img src="../public/images/india.png">`)
+        })
+    </script>
+</head>
+<body>
+    <p></p>
+    <div id="image"></div>
+</body>
+</html>

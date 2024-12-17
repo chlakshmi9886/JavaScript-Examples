@@ -1,0 +1,20 @@
+<script>
+    document.write(
+        `
+            Browser Version : ${navigator.appVersion} <br>
+            Browser Family  : ${navigator.appName} <br>
+            Platform        : ${navigator.platform} <br>
+            Cookies         : ${(navigator.cookieEnabled)?"Cookie Enabled":"Cookie's are disabled - Please enable them"}
+        `
+    );
+
+    navigator.geolocation.getCurrentPosition(function(position){
+        document.write(`
+            Latitude : ${position.coords.latitude} <br>
+            longitue : ${position.coords.longitude}
+        `)
+    });
+
+
+
+</script>

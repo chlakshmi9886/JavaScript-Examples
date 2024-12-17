@@ -1,0 +1,35 @@
+<script>
+    (function(){
+        document.write("Anonymous Function <br>");
+    })();
+
+    let x = prompt("Enter Number");
+    var f1;
+    if(isNaN(x)){
+        (function(){
+            document.write("x  : " +x +"<br>");
+        })();
+    }
+    else{
+        (function(){
+            document.write("x is incremented by 1 : " +x +"<br>");
+        })();
+    }
+    if(isNaN(x)){
+        f1 = function(){
+            console.log("control executed..");
+            document.write("x : " +x +"<br>");
+        }
+        //f1();
+    }
+    else{
+        f1 = function(){
+            x++;
+            document.write("x is :: " + x +"<br>");
+        }
+        //f1();
+    }
+
+f1();
+f1();
+</script>

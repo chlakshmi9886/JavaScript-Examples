@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - Ordered List Example</title>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        var Product =["Footware","Electronics","Fashion"];
+        $(function(){
+            for(let item of Product){
+                $(`<li>${item}</li>`).appendTo("ol");
+                $(`<option>${item}</option>`).appendTo("select");
+            }
+        });
+    </script>
+</head>
+<body>
+    <ol></ol>
+    <select name="" id=""></select>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<script>
+    function outer(){
+        let x = 10;
+        function inner(){
+            var y = ++x;
+            return `x = ${x} <br> y = ${y}`;
+        }
+        return inner();
+    }
+    document.write(outer());
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Iterations</title>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            let categories = ["Electronics", "FootWare", "Fashion"];
+            $.each(categories,(prop,value)=>{
+                $(`<li>[${prop}] - ${value}</li>`).appendTo("ol");
+                $("select").append(`<option>${value}</option>`);
+            });
+        })
+    </script>
+</head>
+<body>
+    <ol></ol>
+    <select name="" id=""></select>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $("button").click((e)=>{
+                document.write("Record Inserted");
+            })
+            $("#btnSubmit").click((e)=>{
+                document.write(`
+                    id  : ${e.target.id} <br>
+                    class: ${e.target.className}<br>
+                    name: ${e.target.name}<br>
+                    x position : ${e.clientX}<br>
+                    y position: ${e.clientY}<br>
+                    ctrl : ${e.ctrlKey}
+                `);
+            });
+        })
+    </script>
+</head>
+<body>
+    <button>Insert</button>
+    <button id="btnSubmit" name="Submit" class="btn btn-primary">Submit</button>
+</body>
+</html>

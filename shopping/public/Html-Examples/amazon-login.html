@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+        form{
+            width: 300px;
+            border: 1px solid gray;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        legend{
+            border-left: 1px solid gray;
+        }
+        .bar-left,.bar-right{
+            border-top: 1px solid gray;
+            width: 100px;
+        }
+        .new{
+            display: flex;
+        }
+        .bar-title{
+            margin-top: -15px;
+            padding: 10px;
+            font-size: 10px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="mb-3">
+            <h1>Sign in</h1>
+            <div class="mb-2">
+                <label class="form-label">Email or mobile phone number</label>
+                <div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+    
+            <div class="mb-2">
+                <button class="btn btn-warning w-100">Continue</button>
+            </div>
+    
+            <div class="mb-2">
+                <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+            </div>
+    
+            <div class="mb-2">
+                <details>
+                    <summary><a href="#">Need Help?</a></summary>
+                    <dl class="mt-2 me-2">
+                        <dd><a href="#">Forgot password?</a></dd>
+                        <dd><a href="#">Other issues with sign-in</a></dd>
+                    </dl>
+                </details>
+            </div>
+        </form>
+        <div class="mt-4">
+            <fieldset>
+                <legend>New to Amazon?</legend>
+            </fieldset>
+        </div>
+
+        <div class="mt-4">
+            <div class="new">
+                <div class="bar-left"></div>
+                <span class="bar-title">New To Amazon?</span>
+                <div class="bar-right"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

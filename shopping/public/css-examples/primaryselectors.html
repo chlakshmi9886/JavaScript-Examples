@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #idtext-style{
+            color: green;
+            text-align: center;
+            text-justify: auto;
+        }
+        #idborder-style{
+            border: 3px solid red;
+        }
+        #idbg-style{
+            background-color: yellow;
+        }
+        /*id attribute is unique to HTML element. So we can apply only one style on HTML element.*/
+        /*if you want to apply multiple styles on specific HTML element then we should go for class selectors. Class selectors are defind in following format.*/
+        .ctext-style{
+            color: green;
+            text-align: center;
+            text-justify: auto;
+        }
+        .cborder-style{
+            border: 3px solid red;
+        }
+        .cbg-style{
+            background-color: yellow;
+        }
+/* priority. 
+if same attributes are defined, then it will apply according to priority.
+1. ID selector
+2. Class selector
+3. Type selector
+*/
+
+    </style>
+</head>
+<body>
+    <h1 id="idtext-style">Web Technologies</h1>
+    <h1 class="cbg-style ctext-style">HTML</h1>
+    <h1 class="cborder-style ctext-style">CSS</h1>
+    <h1 class="cbg-style">JavaScript</h1>
+</body>
+</html>

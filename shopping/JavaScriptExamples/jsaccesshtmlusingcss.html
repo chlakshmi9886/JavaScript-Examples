@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload(){
+            document.querySelector("img").src="../public/images/India.png";
+            document.querySelector("#btnRegister").value="Register";
+            document.querySelector(".btn-primary").value="Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img width="150px" height="100px" border="1" id="pic" name="pic">
+    </div>
+    <div>
+        <form action="">
+            <h2>Register</h2>
+            Your Name: <input type="text"> <input type="button" id="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <h2>Login</h2>
+            Your Email: <input type="text"> <input type="button" class="btn-primary">
+        </form>
+    </div>
+</body>
+</html>

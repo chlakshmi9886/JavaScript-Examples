@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #username+div{
+            display: none;
+        }
+        #username:focus+div{
+            display: block;
+        }
+        #username:focus{
+            background-color: yellowgreen;
+        }
+        #userid:focus{
+            cursor: not-allowed;
+            color: red;
+        }
+        button:disabled{
+            cursor: not-allowed;
+        }
+        #terms+span{
+            color: red;
+        }
+        #terms:checked+span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Id</dt>
+        <dd>
+            <input type="text" id="userid" READONLY value="106209">
+        </dd>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="username" placeholder="Block Letters">
+            <div>Name Must be Block Letters Only</div>
+        </dd>
+        <dt>Terms of Service</dt>
+        <dd> <input type="checkbox" id="terms"> <span>Accept Terms </span></dd>
+    </dl>
+    <button disabled>Submit</button>
+</body>
+</html>

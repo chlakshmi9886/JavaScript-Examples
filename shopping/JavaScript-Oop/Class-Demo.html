@@ -1,0 +1,18 @@
+<script>
+    class Product{
+        Name = "Samsung TV";
+        Stock = true;
+        Price = 45000.44;
+        Rating = {Rate:4.3,Count:4000};
+        Cities = ["Hyd", "Bang"];
+    }
+    var tv = new Product();
+    tv.Price =50000.55;
+    document.write(`
+        Name = ${tv.Name} <br>
+        Stock = ${tv.Stock} <br>
+        Price = ${tv.Price} <br>
+        Rating = ${tv.Rating.Rate} [${tv.Rating.Count}] <br>
+        Cities = ${tv.Cities} <br>
+    `);
+</script>

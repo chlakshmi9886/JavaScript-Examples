@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <script>
+        function OnclickEvent(){
+            let username = document.getElementById("UserName").value;
+            let password = document.getElementById("password").value;
+            if(username == "john_nit" && password == "john@123"){
+                location.href = "results.html";
+            }
+            else{
+                location.href = "error.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <dt>User Name</dt>
+        <dd><input type="text" id="UserName"></dd>
+        <dt>Password</dt>
+        <dd><input type="password" id="password"></dd>
+    </ul>
+    <button onclick="OnclickEvent()">Submit</button>
+</body>D:\React\htmlworkspace\shopping\JavaScript-Oop\location1.html
+</html>

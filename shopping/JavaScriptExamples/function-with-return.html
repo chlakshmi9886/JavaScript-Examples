@@ -1,0 +1,20 @@
+<script>
+    function ConfirmAction(flag){
+        if(flag=="OK"){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    var choice = ConfirmAction(prompt("Enter your choice","OK|cancel"))
+    if(choice == true){
+        document.write("you select Ok");
+    }
+    else{
+        document.write("you select Cancel");
+    }
+    document.write("<br> data type of function " + (typeof ConfirmAction()) )
+
+</script>

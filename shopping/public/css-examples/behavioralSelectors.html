@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            float: left;
+        }
+        p::first-line{
+            color: purple;
+        }
+        p::selection{
+            background-color: yellowgreen;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        li::after{
+            content: "-->>";
+        }
+        li:last-child::after{
+            content: "";
+            color: gray;
+        }
+        li:last-child{
+            color: green;
+        }
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Name in Block Letters">
+    <ul>
+        <li>Home</li>
+        <li>Electronics</li>
+        <li>Mobiles</li>
+        <li>Samsung</li>
+    </ul>
+    <p align="text-justify">Powered by the latest AI, the new Bing brings together search, browsing, and chat to help you make the most of the web. Start from your Windows taskbar to find relevant, comprehensive results. Begin an interactive chat to ask follow-up questions to refine your search. And get inspired with suggestions to kickstart whatever you want to create. Exploring online has never been easier.
+
+        Try it now
+    </p>
+</body>
+</html>

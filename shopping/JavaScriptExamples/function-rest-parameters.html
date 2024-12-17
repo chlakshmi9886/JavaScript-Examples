@@ -1,0 +1,16 @@
+<script>
+    function Details(title,...product){
+     var [id,name,price, stock, cities, rating] =product;
+        document.write(`
+        <h2> ${title}</h2> <br> 
+        id : ${id} <br> 
+        name: ${name} <br> 
+        price : ${price} <br> 
+        stock: ${stock} <br>
+        cities: ${cities} <br> 
+        rating: ${rating.rate} [${rating.count}]
+        ` );
+    }
+    //product = [1,"TV", 34000];
+    Details("Product Details",1,"TV", 34000, true, ["Delhi", "Hyd"], {rate:4.3,count:4000});
+</script>

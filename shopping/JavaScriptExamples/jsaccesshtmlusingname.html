@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload(){
+        pic.src="../public/images/India.png";
+        frmregister.register.value="Register";
+        frmlogin.login.value="Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img height="100px" width="100px" border="1" name="pic">
+    </div>
+    <div>
+        <form action="" name="frmregister">
+            <h2>Register</h2>
+            User Name: <input type="text"> <input type="button" name="register">
+        </form>
+    </div>
+    <div>
+        <form action="" name="frmlogin">
+            <h2>Login</h2>
+            Your mail: <input type="text"> <input type="button" name="login">
+        </form>
+    </div>
+</body>
+</html>
